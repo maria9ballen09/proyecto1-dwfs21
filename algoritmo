@@ -1,0 +1,32 @@
+Algoritmo proyecto1_dwfsc24
+
+	Definir  precio, cupon_descuento, iva, cantidad_comprada, destino_envio Como Real
+	Definir precio_con_descuento, precio_con_iva, descuento_por_cantidad, costo_final Como Real
+	Definir producto Como Caracter
+	Definir costo_envio Como real
+	escribir "Bienvenido a tienda virtual BOUTIQUESHOP"
+	Escribir "ingrese la referencia seleccionada"
+	Leer producto
+	Escribir "ingrese el precio del articulo"
+	leer precio
+	Escribir "ingrese cantidad a comprar"
+	Leer cantidad_comprada
+	Escribir "ingrese destino del envio"
+	Leer  producto
+	suma<-(precio*cantidad_comprada)
+	precio_con_descuento<-precio - (precio* 0.15)
+	descuento_por_cantidad<-precio_con_descuento - (precio_con_descuento* 0.95) 
+    precio_con_iva<- precio_con_descuento*1.19 
+	costo_envio<- 20000
+	total<-(cantidad_comprada* precio_con_iva+costo_envio)
+	Escribir "El costo total de la compra es:" total
+	Escribir "A continuacion se muestra la totalidad de la compra"
+	Escribir "costo inicial: " precio
+	Escribir "Precio con descuento del 15%: "  , precio_con_descuento * cantidad_comprada
+	Escribir "Descuento por cantidad del 5%: " descuento_por_cantidad 
+	Escribir "Precio con iva: ",  precio_con_iva * cantidad_comprada
+	Escribir "Precio del envio: "  costo_envio
+	Escribir "GRACIAS POR SU COMPRA!"
+	
+	
+FinAlgoritmo
